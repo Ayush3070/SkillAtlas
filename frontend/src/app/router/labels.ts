@@ -1,0 +1,16 @@
+export const ROUTE_LABELS: Record<string, string> = {
+  dashboard: "Overview",
+  "labour-market": "Labour Market",
+  skills: "Skills Intelligence",
+  matrix: "Skill Gap Matrix",
+  courses: "Courses",
+  curriculum: "Curriculum Alignment",
+  employers: "Employers",
+  "training-capacity": "Training Capacity",
+  "district-planning": "District Planning",
+  "candidate-guidance": "Candidate Guidance",
+  reports: "Reports",
+  settings: "Settings",
+  help: "Help",
+  login: "Sign in",
+};

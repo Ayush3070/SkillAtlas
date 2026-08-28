@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+dist/
+frontend/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.python-version
+uv.lock
+*.egg-info/
+
+# Vercel local state (contains project IDs)
+.vercel/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/

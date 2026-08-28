@@ -1,0 +1,419 @@
+/* =========================================================
+   SkillPulse — Design Tokens
+   Light-first, calm, analytical, premium
+   ========================================================= */
+
+:root {
+  /* ---------- Surfaces ---------- */
+  --bg-base: #f7f7f5;
+  --bg-canvas: #f3f3f0;
+  --bg-subtle: #eeeeea;
+  --bg-muted: #e7e7e2;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --surface-sunken: #fafaf8;
+  --surface-inverse: #0b1220;
+  --overlay: rgba(11, 18, 32, 0.42);
+
+  /* ---------- Borders ---------- */
+  --border-subtle: #ececea;
+  --border-default: #e1e1dc;
+  --border-strong: #cfcfca;
+  --border-focus: #2563eb;
+
+  /* ---------- Text ---------- */
+  --text-primary: #0b1220;
+  --text-secondary: #3a4252;
+  --text-tertiary: #6b7384;
+  --text-muted: #8d95a4;
+  --text-disabled: #adb3bf;
+  --text-inverse: #ffffff;
+  --text-link: #1d4ed8;
+  color-scheme: light;
+}
+
+/* =========================================================
+   Dark theme — pure-black canvas, slightly raised surfaces
+   ========================================================= */
+:root.dark,
+.dark {
+  /* Pure black canvas per spec */
+  --bg-base: #000000;
+  --bg-canvas: #000000;
+  --bg-subtle: #0a0a0a;
+  --bg-muted: #141414;
+
+  /* Slightly raised surfaces so content reads on pure black */
+  --surface: #0c0c0c;
+  --surface-raised: #111111;
+  --surface-sunken: #080808;
+  --surface-inverse: #f5f5f5;
+  --overlay: rgba(0, 0, 0, 0.72);
+
+  /* Borders — subtle on black */
+  --border-subtle: #1a1a1a;
+  --border-default: #262626;
+  --border-strong: #3a3a3a;
+  --border-focus: #60a5fa;
+
+  /* Text */
+  --text-primary: #f5f5f5;
+  --text-secondary: #c8ccd4;
+  --text-tertiary: #8a909b;
+  --text-muted: #6a6f78;
+  --text-disabled: #4a4d54;
+  --text-inverse: #0b1220;
+  --text-link: #93c5fd;
+
+  /* Semantic tones — keep brand recognisable, tune for dark contrast */
+  --primary-50:  #0b1a3a;
+  --primary-100: #112554;
+  --primary-200: #1a3580;
+  --primary-300: #2a55b5;
+  --primary-400: #3a73e6;
+  --primary-500: #5b8def;
+  --primary-600: #4a78d6;
+  --primary-700: #3a62b8;
+  --primary-800: #2a4d99;
+  --primary-900: #1c3978;
+
+  --accent: #60a5fa;
+  --accent-soft: #112554;
+
+  --success-50:  #06281a;
+  --success-100: #0a3a26;
+  --success-500: #34d399;
+  --success-600: #22c08a;
+  --success-700: #16a574;
+
+  --warning-50:  #2a1d05;
+  --warning-100: #422a07;
+  --warning-500: #f59e0b;
+  --warning-600: #e08a08;
+  --warning-700: #c47506;
+
+  --danger-50:   #2a0a0a;
+  --danger-100:  #451414;
+  --danger-500:  #f87171;
+  --danger-600:  #e25555;
+  --danger-700:  #c93d3d;
+
+  --info-50:     #051a2a;
+  --info-100:    #082842;
+  --info-500:    #60a5fa;
+  --info-600:    #4d8fd9;
+  --info-700:    #3a72b8;
+
+  --neutral-50:  #0a0a0a;
+  --neutral-100: #141414;
+  --neutral-200: #1f1f1f;
+  --neutral-300: #2c2c2c;
+  --neutral-400: #4a4a4a;
+  --neutral-500: #6a6a6a;
+  --neutral-600: #8a8a8a;
+  --neutral-700: #c0c0c0;
+  --neutral-800: #d8d8d8;
+  --neutral-900: #f5f5f5;
+
+  /* Chart palette — same hues, slightly brighter for dark surfaces */
+  --chart-1: #60a5fa;
+  --chart-2: #34d399;
+  --chart-3: #fbbf24;
+  --chart-4: #a78bfa;
+  --chart-5: #22d3ee;
+  --chart-6: #f87171;
+  --chart-7: #94a3b8;
+  --chart-8: #2dd4bf;
+
+  color-scheme: dark;
+}
+
+  /* ---------- Brand & Semantic ---------- */
+  --primary-50:  #eff4ff;
+  --primary-100: #dbe5ff;
+  --primary-200: #b8c9ff;
+  --primary-300: #92a8ff;
+  --primary-400: #6b85fb;
+  --primary-500: #3b5bdb;   /* primary accent — restrained blue */
+  --primary-600: #2f49b8;
+  --primary-700: #243a93;
+  --primary-800: #1b2d72;
+  --primary-900: #142152;
+
+  --accent: #1d4ed8;
+  --accent-soft: #e8efff;
+
+  --success-50:  #ecfaf2;
+  --success-100: #d4f3df;
+  --success-500: #0f9d58;
+  --success-600: #0a7a45;
+  --success-700: #0a5d36;
+
+  --warning-50:  #fff7e6;
+  --warning-100: #fdeac3;
+  --warning-500: #d97706;
+  --warning-600: #b45309;
+  --warning-700: #8a3d07;
+
+  --danger-50:   #fdecec;
+  --danger-100:  #f8d2d2;
+  --danger-500:  #c93434;
+  --danger-600:  #a82525;
+  --danger-700:  #841b1b;
+
+  --info-50:     #e9f4fb;
+  --info-100:    #d2e6f3;
+  --info-500:    #1976d2;
+  --info-600:    #125ea8;
+  --info-700:    #0c4a85;
+
+  --neutral-50:  #f5f5f2;
+  --neutral-100: #ebebe6;
+  --neutral-200: #dcdcd6;
+  --neutral-300: #c4c4be;
+  --neutral-400: #9a9a93;
+  --neutral-500: #6e6e68;
+  --neutral-600: #4d4d48;
+  --neutral-700: #2e2e2b;
+  --neutral-800: #1c1c1a;
+  --neutral-900: #0b1220;
+
+  /* ---------- Chart palette (semantic + categorical) ---------- */
+  --chart-1: #1d4ed8; /* primary blue */
+  --chart-2: #0f9d58; /* success green */
+  --chart-3: #d97706; /* warning amber */
+  --chart-4: #7c3aed; /* violet */
+  --chart-5: #0891b2; /* cyan */
+  --chart-6: #c93434; /* danger red */
+  --chart-7: #475569; /* slate */
+  --chart-8: #0e766e; /* teal */
+
+  /* ---------- Spacing scale (4px base) ---------- */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+
+  /* ---------- Radii ---------- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 999px;
+
+  /* ---------- Shadows / elevation ---------- */
+  --shadow-1: 0 1px 2px rgba(11, 18, 32, 0.04);
+  --shadow-2: 0 1px 3px rgba(11, 18, 32, 0.06), 0 1px 2px rgba(11, 18, 32, 0.04);
+  --shadow-3: 0 4px 10px -2px rgba(11, 18, 32, 0.06), 0 2px 4px -2px rgba(11, 18, 32, 0.04);
+  --shadow-4: 0 10px 24px -8px rgba(11, 18, 32, 0.10), 0 4px 8px -4px rgba(11, 18, 32, 0.05);
+  --shadow-pop: 0 18px 40px -12px rgba(11, 18, 32, 0.18), 0 4px 12px -4px rgba(11, 18, 32, 0.08);
+  --shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.22);
+
+  /* ---------- Typography ---------- */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --text-2xs: 0.6875rem;  /* 11 */
+  --text-xs:  0.75rem;    /* 12 */
+  --text-sm:  0.8125rem;  /* 13 */
+  --text-base:0.875rem;   /* 14 */
+  --text-md:  0.9375rem;  /* 15 */
+  --text-lg:  1.0625rem;  /* 17 */
+  --text-xl:  1.25rem;    /* 20 */
+  --text-2xl: 1.5rem;     /* 24 */
+  --text-3xl: 1.875rem;   /* 30 */
+  --text-4xl: 2.25rem;    /* 36 */
+  --text-5xl: 2.75rem;    /* 44 */
+
+  --leading-tight: 1.2;
+  --leading-snug:  1.35;
+  --leading-normal:1.5;
+  --leading-relaxed: 1.6;
+
+  --tracking-tight:  -0.01em;
+  --tracking-tighter:-0.02em;
+  --tracking-wide:   0.04em;
+  --tracking-wider:  0.08em;
+
+  /* ---------- Z-index ---------- */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-sticky:  20;
+  --z-overlay: 40;
+  --z-drawer:  50;
+  --z-modal:   60;
+  --z-toast:   80;
+  --z-tooltip: 90;
+  --z-cmd:     95;
+
+  /* ---------- Motion ---------- */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.3, 0, 0, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in:  cubic-bezier(0.4, 0, 1, 1);
+
+  --duration-instant: 80ms;
+  --duration-fast:    150ms;
+  --duration-base:    200ms;
+  --duration-slow:    250ms;
+  --duration-slower:  320ms;
+  --duration-page:    360ms;
+
+  /* ---------- Breakpoints (for reference; tailwind handles media) ---------- */
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1440px;
+}
+
+/* =========================================================
+   Base / reset
+   ========================================================= */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv11", "ss01", "ss03";
+}
+
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; }
+input, select, textarea { font: inherit; color: inherit; }
+img, svg, canvas { display: block; max-width: 100%; }
+
+::selection { background: rgba(37, 99, 235, 0.18); color: var(--text-primary); }
+
+/* Scrollbars */
+* { scrollbar-width: thin; scrollbar-color: var(--neutral-300) transparent; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: var(--neutral-300); border-radius: 999px; border: 2px solid transparent; background-clip: padding-box; }
+*::-webkit-scrollbar-thumb:hover { background: var(--neutral-400); border: 2px solid transparent; background-clip: padding-box; }
+*::-webkit-scrollbar-track { background: transparent; }
+
+/* Focus */
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================================
+   Reusable utility classes (semantic, not visual noise)
+   ========================================================= */
+
+.app-shell { min-height: 100vh; background: var(--bg-base); }
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-1);
+}
+.panel-raised {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-2);
+}
+.panel-header {
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.panel-body { padding: var(--space-5); }
+.panel-footer {
+  padding: var(--space-3) var(--space-5);
+  border-top: 1px solid var(--border-subtle);
+  background: var(--surface-sunken);
+  border-bottom-left-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-lg);
+}
+
+.kbd {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 18px; height: 18px; padding: 0 4px;
+  font-family: var(--font-mono);
+  font-size: 10.5px; font-weight: 500;
+  color: var(--text-tertiary);
+  background: var(--surface);
+  border: 1px solid var(--border-default);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.numeric { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+
+.tabular { font-variant-numeric: tabular-nums; }
+
+.divider { height: 1px; background: var(--border-subtle); }
+.divider-v { width: 1px; align-self: stretch; background: var(--border-subtle); }
+
+/* Section transitions */
+.fade-in { animation: fadeIn var(--duration-slow) var(--ease-out) both; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(2px); } to { opacity: 1; transform: none; } }
+
+.shimmer {
+  background: linear-gradient(90deg, var(--bg-subtle) 0%, var(--bg-muted) 50%, var(--bg-subtle) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+  border-radius: var(--radius-sm);
+}
+@keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+
+/* Recharts polish */
+.recharts-cartesian-axis-tick text { fill: var(--text-tertiary); font-size: 11.5px; }
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line { stroke: var(--border-subtle); }
+.recharts-tooltip-wrapper { outline: none !important; }
+.recharts-default-tooltip {
+  background: var(--surface) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-3) !important;
+  padding: 8px 10px !important;
+  font-size: 12px !important;
+  color: var(--text-primary) !important;
+}
+.recharts-legend-item-text { color: var(--text-tertiary) !important; font-size: 12px !important; }
+
+/* Sr-only */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
