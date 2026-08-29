@@ -1,4 +1,4 @@
-# SkillSync AI — Labour Market Intelligence & Curriculum Alignment Platform
+# SkillAtlas — Labour Market Intelligence & Curriculum Alignment Platform
 
 **SIH 2026 Problem Statement SIH26134**
 
@@ -33,7 +33,7 @@ A dark futuristic dashboard that translates **Industry Demand → Skill Demand �
 ```
 Frontend (React + TS + Vite + Tailwind + Recharts + Three.js)
    ↓ fetch()
-FastAPI REST API
+FastAPI REST API (SkillAtlas)
    ↓
 Services (analytics.py, recommendation_engine.py, career_engine.py)
    ↓
