@@ -128,6 +128,8 @@
   color-scheme: dark;
 }
 
+:root {
+
   /* ---------- Brand & Semantic ---------- */
   --primary-50:  #eff4ff;
   --primary-100: #dbe5ff;
